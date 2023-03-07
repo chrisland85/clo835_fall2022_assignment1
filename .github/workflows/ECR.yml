@@ -29,7 +29,7 @@ jobs:
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: webapp_repo
-        IMAGE_TAG: v0.2
+        IMAGE_TAG: v0.211
       run: |
         cd webapplication/
         ls -ltra
@@ -42,7 +42,7 @@ jobs:
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: mysql_repo
-        IMAGE_TAG: v0.2
+        IMAGE_TAG: v0.221
       run: |
         cd sqldb/
         ls -ltra
